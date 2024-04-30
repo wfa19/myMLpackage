@@ -16,7 +16,7 @@ You can install MyMLpackage from `pip install git+https://github.com/wfa19/myMLp
 
 ```bash
  pip install git+https://github.com/wfa19/myMLpackage.git
-
+```
 ## Usage
 import myMLpackage                                               
 from myMLpackage import automation_class as ac
