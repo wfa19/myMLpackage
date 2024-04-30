@@ -10,7 +10,8 @@ MyMLpackage is a Python package that provides dedicated functions for various op
 - **Modelling**: Functions for building machine learning models.
 - **Prediction** Functions to make predictions using the trained model
 - **Automation class** A python class which can be initialized with data and inputs to automate ML training.
-- **Data** A python class which can be initialized with data and inputs to automate ML training.
+- **Data** Inbuilt datasets.
+- **streamlit wraparounds** Provides wrap around functions to add streamlit inputs functionality. 
 
 most of these modules bundle the inputs into a master data dictionary, which is then passed to the Pycaret setup function for further processing.
 
@@ -81,6 +82,38 @@ model.determine_model_type()
 ```bash
 model.plot_countplot()
 ```
+### Graph correlation matrix of features
+```bash
+model.plot_correlation_matrix()
+```
+### model comparison
+```bash
+model.model_comparisons
+model.tuned_model             # best model after tuning
+model.tuned_model_performance # performance of tuned model
+```
+### graph best model
+```bash
+model.graph_results()
+```
+### Predict new data
+```bash
+model.prediction(newdata)
+```
 
+### see more methods of the class
 
+```bash
+help(model)
+```
+## Streamlit app
+MyMLpackage also includes a Streamlit app for providing a user-friendly interface where users can load data and configure ML training settings for Pycaret. The Streamlit app can be found in the [streamlitapp](https://github.com/wfa19/streamlitapp)
+ repository. You can run the app directly [here](https://appapp-huuj4texim3prymddwuzm5.streamlit.app/)
+
+## License
+This project is licensed under the MIT License.
+
+```bash
+Feel free to adjust the formatting and content to fit your preferences and requirements. If you have any further questions or need assistance, feel free to ask!
+```
 
